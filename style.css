@@ -1,0 +1,633 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+ul > li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Start Nav bar */
+nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: #2D25A0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+}
+nav .logo{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+nav .logo span{
+    color: #E02C6D;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+nav ul li{
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    border-bottom: 1.5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.active{
+    border-color: #E02C6D;
+    color: #E02C6D;
+}
+nav ul a:hover{
+    border-color: #E02C6D;
+    color: #E02C6D;;
+}
+nav .menu-btn i{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+input[type="checkbox"]{
+    display: none;
+} 
+
+.log-in{
+    text-decoration: none;
+    background-color: #6b0f1a;
+    background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
+    padding: 10px 30px;
+    border-radius: 100px;
+    color: white;
+    font-weight: 700;
+} 
+/* End Nav bar  */
+
+
+
+/* Start Top section  */
+
+.top-banner{
+    background-color: #2D25A0;
+    display: flex;
+    align-items: center;
+    padding: 20px 0 80px 0;
+}
+.top-banner .container .inner-half h1{
+    font-size: 64px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 80px;
+    color: white;
+}
+.top-banner .container .inner-half img{
+    width: 100%;
+    transform: scale(1);
+    transition: transform 0.4s ease;
+}
+.top-banner .container .img:hover img{
+    transform: scale(1.05);
+}
+.top-banner .container .header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    align-items: flex-start;
+    text-align: left;
+}
+.top-banenr .container .header-text, .img{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-banner .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.top-banner .banner-btn{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    background: #E02C6D;
+    padding: 8px 26px;
+    margin-top: 14px;
+    transform: rotate(0deg) skew(0deg) scale(1);
+    transition: transform 0.4s ease;
+}
+.top-banner .fas{
+    margin-left: 10px;
+}
+.top-banner .banner-btn:hover{
+    color: #2D25A0;
+}
+
+/* End To section  */
+
+
+/* Start Middle section  */
+
+.cards-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 28px;
+    grid-row-gap: 28px;
+    padding-top: 70px;
+    margin-bottom: 100px;
+    font-family: 'Poppins', sans-serif;
+}
+.cards-section .card-item .card-header-text{
+    font-size: 28px;
+    color: #18191F;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+.cards-section .card-item p{
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 400;
+}
+.cards-section .card-item{
+    width: 100%;
+    max-height: auto;
+    padding: 16px 16px 40px 16px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+}
+.cards-section .card-item .card-image{
+    max-width: 100%;
+    max-height: 100%;
+}
+/* End Middle section  */
+
+/* Start Highlight section  */
+
+.highlight-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 60px;
+    font-family: 'Poppins', sans-serif;
+    padding: 60px 0;
+}
+.highlight-section .inner-half .hl-img{
+    width: 100%;
+}
+.highlight-section .inner-half .watch-btn{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    background: #E02C6D;
+    padding: 8px 26px;
+    margin-top: 18px;
+}
+.highlight-section .hl-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.highlight-section .fas{
+    margin-left: 10px;
+}
+.highlight-text h1{
+    font-size: 48px;
+    color: #0A0826;
+}
+.highlight-text p{
+    font-size: 16px;
+    color: #6C6C6C;
+}
+.highlight-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.watch-btn:hover{
+    color: #2D25A0;
+}
+/* End Highlight section  */
+
+/* Start Log in form  */
+a{
+    font-size: 14px;
+    line-height: 1.7;
+    color: #fff;
+    text-decoration: none;
+    margin: 0;
+    transition: all 0.4s;
+}
+a:focus{
+    outline: none;
+}
+input{
+    outline: none;
+    border: none;
+}
+input::-webkit-input-placeholder{
+    color: #8f8fa1;
+}
+.container-login100{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: #2D25A0;
+    margin-top: 50px;
+   
+}
+.container-login100::before{
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #2D25A0;
+}
+.wrap-login100{
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    position: relative;
+}
+.login-form{
+    width: 100%;
+}
+.login100-form-title{
+    font-size: 25px;
+    color: #403866;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-bottom: 40px;
+}
+.login100-form-title i{
+    font-size: 50px;
+    color: #fff;
+    border: 1.5px solid #E02C6D;
+    width: 100px;
+    border-radius: 100%;
+    height: 100px;
+    line-height: 90px;
+    transition: 0.5s ease-in-out;
+}
+.login100-form-title i:hover{
+    background-color: #fff;
+    color: #E02C6D;
+    border-color: #fff;
+}
+.wrap-input100{
+    width: 100%;
+    position: relative;
+    background-color: #e6e6e6;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+.input100{
+    color: #403866;
+    line-height: 1.2;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    background-color: #f8f8f9;
+    height: 52px;
+    padding: 0px 20px 0px;
+    border-radius: 6px;
+}
+.focus-input100{
+    position: absolute;
+    display: block;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    top: -1px;
+    left: -1px;
+    pointer-events: none;
+    border: 2px solid #E02C6D;
+    border-radius: 3px;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    -webkit-transform: scaleX(1.1) scaleY(1.3);
+    transform: scaleX(1.1) scaleY(1.3);
+}
+.input100:focus + .focus-input100{
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.container-login100-form-btn{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.login100-form-btn{
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20p;
+    width: 100%;
+    height: 52px;
+    cursor: pointer;
+    background-color: #E02C6D;
+    border-radius: 6px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+}
+.login-form-btn:hover{
+    background-color: #E02C6D;
+}
+.p-t-50{padding-top: 50px;}
+.p-b-90{padding-bottom: 90px;}
+.p-l-50{padding-left: 50px;}
+.p-r-50{padding-right: 50px;}
+.m-t-17{margin-top: 17px;}
+.m-b-16{margin-bottom: 16px;}
+
+.w-full{
+    width: 100%;
+}
+.m-auto{
+    margin: auto;
+}
+/* End Log in form  */
+
+
+        /* Start Footer Section */
+
+footer{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+footer .footer-img{
+    width: 423.3px;
+    margin-bottom: 40px;
+}
+footer i{
+    padding: 10px;
+    color: #969BAB;
+    font-size: 16px;
+    background: rgba(150, 155, 171, 0.5);
+    border-radius: 50%;
+    margin: 0 7px;
+    transition: background 0.4s ease, color 0.4s ease;
+}
+footer i:nth-child(1){
+    padding: 11px 12px;
+}
+footer i:hover{
+    background: #E02C6D;
+    color: white;
+}
+footer .footer-text{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 18px;
+    margin-top: 28px;
+}
+ /* End Footer Section */
+
+        /* Media Query */
+        /* 
+            For 480px or down screen size device
+        */
+
+@media only screen and (max-width: 480px){
+
+        /* header section */
+
+    .container{
+    width: 90%;
+    margin: 0 auto;
+    }
+
+    .header .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom: 15px;
+    }
+    .header .container ul {
+        display: none;
+    }
+
+    /* banner section */
+
+    .top-banner{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 20px;
+    }
+    .top-banner .container .inner-half img{
+        width: 90%;
+    }
+    .top-banner .container .inner-half h1{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .top-banner .container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 40px;
+    }
+
+        /* card section */
+
+    .cards-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+
+        /* highlight section  */
+
+    .highlight-section{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 60px 0 30px 0;
+    }
+    .highlight-text h1{
+        font-size: 30px;
+    }
+    .highlight-text{
+        margin-bottom: 30px;
+    }
+
+        /* footer section  */
+    footer{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    }
+    footer .footer-img{
+    width: 300px;
+    margin-bottom: 20px;
+    }
+}
+
+
+  /* For 768px  devides */
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    
+    /* header section  */
+
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .header .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom: 20px;
+    }
+    .header .container ul {
+        display: none;
+    }
+
+    /* banner section */
+
+    .top-banner{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 20px;
+    }
+    .top-banner .container .inner-half img{
+        width: 90%;
+    }
+    .top-banner .container .inner-half h1{
+        font-size: 48px;
+        line-height: 60px;
+    }
+    
+    .top-banner .container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 40px;
+    }
+
+            /* card section  */
+
+    .cards-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 28px;
+    grid-row-gap: 28px;
+    padding-top: 70px;
+    margin-bottom: 100px;
+    }
+
+        /* highlight section  */
+
+    .highlight-section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+        padding: 60px 0;
+    }
+            /* footer section  */
+    footer{
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+    footer .footer-img{
+        width: 350px;
+        margin-bottom: 25px;
+    }
+}
+/* navbar */
+@media (max-width:1000px){
+    nav{
+        padding: 0 40px 0px 50px;
+    }
+}
+@media (max-width:920px){
+    nav .menu-btn i{
+        display: block;
+    }
+    #click:Checked ~ .menu-btn i:before{
+        content: '\f00d';
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background: #2D25A0;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        z-index: 10;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    #click:Checked ~ ul {
+        left: 0px;
+    }
+    nav ul li{
+        width: 100%;
+        margin: 40px 0;
+    }
+    nav ul li a{
+        width: 100%;
+        margin-left: -100%;
+        display: block;
+        font-size: 20px;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    #click:Checked ~ ul li a{
+        margin-left: 0px;
+    }
+}
+   
+            
