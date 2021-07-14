@@ -80,8 +80,7 @@ input[type="checkbox"]{
 
 .log-in{
     text-decoration: none;
-    background-color: #6b0f1a;
-    background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
+    background-color: #E02C6D;
     padding: 10px 30px;
     border-radius: 100px;
     color: white;
@@ -428,9 +427,7 @@ footer .footer-text{
  /* End Footer Section */
 
         /* Media Query */
-        /* 
-            For 480px or down screen size device
-        */
+        /*   For 480px or down screen size device */
 
 @media only screen and (max-width: 480px){
 
@@ -586,7 +583,7 @@ footer .footer-text{
         margin-bottom: 25px;
     }
 }
-/* navbar */
+        /* navbar */
 @media (max-width:1000px){
     nav{
         padding: 0 40px 0px 50px;
